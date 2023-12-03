@@ -1,0 +1,30 @@
+-- local defaults = {
+--     HUD_safe_zone = 0
+-- }
+
+-- function get_config(key)
+--     if ui_mcm then return ui_mcm.get("dart/" .. key) else return defaults[key] end
+-- end
+
+-- function on_mcm_load()
+-- 	op ={	id= "dart" , sh = true , gr = 
+-- 			{				
+-- 				{type = "title", text = "Positioning"},
+-- 				{id = "HUD_safe_zone", type = "track", val = 2, def = 0, min = 0.0, max = 512, step = 0.5},
+-- 			}
+-- 		}
+		
+-- 	return op
+-- end
+
+-- local function on_option_change()
+--     if ui_mcm then
+--         magazine_binder.ready_color = rax_persistent_highlight.change_alpha(colors[ui_mcm.get("magazines/mgmt/highlight_color")] or colors.orange , ui_mcm.get("magazines/mgmt/highlight_clr_a") or 100 )
+--         empty_table(magazines.cache_mag_time)
+--     end
+-- end
+
+-- function on_game_start()
+-- 	RegisterScriptCallback("on_option_change", on_option_change)  --MCM sends the same callback as ui_options 
+-- 	on_option_change()
+-- end
